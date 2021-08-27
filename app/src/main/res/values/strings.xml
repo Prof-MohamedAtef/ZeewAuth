@@ -3,4 +3,10 @@
     <string name="sign_in">Sign In</string>
     <string name="email_hint">Email Address</string>
     <string name="password_hint">Password</string>
+    <string name="donothaveacc_signup">Do not have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="sign_in_fb">Sign in with Facebook</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="join_us">Join Us</string>
 </resources>

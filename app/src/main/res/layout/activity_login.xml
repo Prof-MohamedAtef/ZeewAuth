@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".view.LoginActivity">
     <ImageView
         android:id="@+id/headerImage"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"
-        android:scaleType="centerCrop"/>
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/sign"
@@ -25,7 +25,8 @@
         android:text="@string/sign_in"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
     <com.google.android.material.card.MaterialCardView
         style="@style/YourCardView"
         android:id="@+id/signInCard"
@@ -74,7 +75,7 @@
                     android:inputType="textPersonName|textMultiLine"
                     android:maxLines="1"
                     android:lines="1"
-                    android:gravity="top|left" />
+                    android:gravity="top|start" />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 app:endIconMode="password_toggle"
@@ -108,7 +109,7 @@
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:lines="1"
-                    android:gravity="top|left" />
+                    android:gravity="top|start" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -124,11 +125,93 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:background="@drawable/btn_style"
         android:theme="@style/BUttons"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"/>
-
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"/>
+    <LinearLayout
+        android:id="@+id/linearSignUp"
+        app:layout_constraintStart_toStartOf="@id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@id/btnSignIn"
+        app:layout_constraintTop_toBottomOf="@id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donothaveacc_signup"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/zeew_green"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/linearSignUp"
+        app:layout_constraintEnd_toEndOf="@id/linearSignUp"
+        app:layout_constraintTop_toBottomOf="@id/linearSignUp"
+        android:layout_marginTop="20dp"
+        android:text="@string/forget_password"
+        android:textSize="20sp"
+        android:textColor="@color/zeew_green"/>
+    <View
+        android:id="@+id/grayView"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="@id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@id/btnSignIn"
+        app:layout_constraintTop_toBottomOf="@id/tvForgetPassword"
+        android:layout_marginTop="10dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        app:layout_constraintTop_toBottomOf="@+id/grayView"
+        android:text="@string/sign_in_fb"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/btn_fb_icon_style"
+        android:textColor="@color/fb_blue"
+        android:id="@+id/btnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/fb_btn_style"
+        android:theme="@style/BUttons"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebook"
+        android:text="@string/sign_in_with_google"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/fb_btn_style"
+        android:drawableStart="@drawable/btn_gl_icon_style"
+        android:textColor="@color/black"
+        android:id="@+id/btnGoogle"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/BUttons"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
