@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Zeew</string>
+
+    <string name="facebook_app_id">238603184826991</string>
+    <string name="fb_login_protocol_scheme">fb238603184826991</string>
+<!--    <string name="GoogleApiKey">AIzaSyBkVgyg6MvskgqKJk-oemkKcIA9fjOnb1U</string>-->
+    <string name="GoogleApiKey">AIzaSyCPhMDRrL1SVQ5Mj7s9uqbkz3AnsA7Sctw</string>
+<!--    <string name="default_web_client_id_mine">923744098774-ea70fja8hcka59i1dvje55r6fr7okik7.apps.googleusercontent.com</string>-->
+    <string name="default_web_client_id_mine">923744098774-vhns4vkji104ubak3qerln9rt5fohdd9.apps.googleusercontent.com</string>
     <string name="sign_in">Sign In</string>
     <string name="email_hint">Email Address</string>
     <string name="password_hint">Password</string>
@@ -21,4 +28,6 @@
     <string name="password_invalid">Invalid Password!</string>
     <string name="passwords_matching">Passwords does not match</string>
     <string name="enter_elevel_phone">Please enter 11 numbers in Phone</string>
+    <string name="title_activity_maps">Map</string>
+
 </resources>
