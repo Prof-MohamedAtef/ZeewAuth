@@ -196,6 +196,7 @@
         android:drawableStart="@drawable/btn_fb_icon_style"
         android:textColor="@color/fb_blue"
         android:id="@+id/btnFacebook"
+        android:onClick="onClick"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@drawable/fb_btn_style"
@@ -213,6 +214,7 @@
         android:drawableStart="@drawable/btn_gl_icon_style"
         android:textColor="@color/black"
         android:id="@+id/btnGoogle"
+        android:onClick="onClick"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -226,26 +228,27 @@
         android:id="@+id/fb_login_button"
         app:layout_constraintEnd_toEndOf="@id/btnFacebook"
         app:layout_constraintStart_toStartOf="@id/btnFacebook"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btnFacebook"
+        app:layout_constraintTop_toTopOf="@id/btnFacebook"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
     <com.google.android.gms.common.SignInButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sign_in_button"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
         app:layout_constraintStart_toStartOf="@id/btnGoogle"
         app:layout_constraintEnd_toEndOf="@id/btnGoogle"
-        app:layout_constraintTop_toBottomOf="@id/fb_login_button">
-
-    </com.google.android.gms.common.SignInButton>
+        app:layout_constraintTop_toTopOf="@id/btnGoogle"
+        app:layout_constraintBottom_toBottomOf="@id/btnGoogle"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
