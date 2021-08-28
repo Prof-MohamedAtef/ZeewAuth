@@ -9,4 +9,14 @@
     <string name="sign_in_fb">Sign in with Facebook</string>
     <string name="sign_in_with_google">Sign in with Google</string>
     <string name="join_us">Join Us</string>
+    <string name="fill_data">Please, fill data at first!</string>
+    <string name="valid_email_required">Valid email address is required</string>
+    <string name="firstname_hint">First Name</string>
+    <string name="lastname_hint">Last Name</string>
+    <string name="email_address_hint">Email Address</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="invalid_email">Invalid Email!</string>
+    <string name="password_less_than">Password is less than 6 characters</string>
+    <string name="password_invalid">Invalid Password!</string>
 </resources>

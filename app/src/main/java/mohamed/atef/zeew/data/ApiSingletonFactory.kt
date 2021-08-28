@@ -1,6 +1,6 @@
 package mohamed.atef.zeew.data
 
-import mohamed.atef.zeew.Constants
+import mohamed.atef.zeew.utils.Constants
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
