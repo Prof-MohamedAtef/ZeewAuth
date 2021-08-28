@@ -19,4 +19,6 @@
     <string name="invalid_email">Invalid Email!</string>
     <string name="password_less_than">Password is less than 6 characters</string>
     <string name="password_invalid">Invalid Password!</string>
+    <string name="passwords_matching">Passwords does not match</string>
+    <string name="enter_elevel_phone">Please enter 11 numbers in Phone</string>
 </resources>

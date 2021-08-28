@@ -10,8 +10,23 @@ class ValidateRegex {
             return !TextUtils.isEmpty(email) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
         }
 
+        fun areAllFieldsFilled(firstName:String?, lastName: String?, email: String?, phoneNumber: String?,
+        password: String?, confirmPassword: String?, referralCode:String?):Boolean{
+            return  !TextUtils.isEmpty(firstName)&&!TextUtils.isEmpty(lastName)&&!TextUtils.isEmpty(email)&&
+                    !TextUtils.isEmpty(phoneNumber)&&!TextUtils.isEmpty(password)&&!TextUtils.isEmpty(confirmPassword)&&
+                    !TextUtils.isEmpty(referralCode)
+        }
+
         fun isValidLength(password: String?):Boolean{
             password?.let { return password.length >=6 } ?:return false
+        }
+
+        fun isPhoneLengthValid(phoneNumber:String?):Boolean{
+            phoneNumber?.let { return phoneNumber.length==11 }?:return false
+        }
+
+        fun isEqualLength(password: String?, confirmPassword: String?):Boolean{
+            password?.let { return password?.length==confirmPassword?.length } ?:return false
         }
 
         fun isValidPassword(password: String?) : Boolean {
