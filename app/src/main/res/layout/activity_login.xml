@@ -12,10 +12,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.LoginActivity">
-    <ImageView
+    <TextView
         android:id="@+id/headerImage"
-        android:layout_width="250dp"
-        android:layout_height="80dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="zeew"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="120sp"
+        android:textStyle="bold"
+        android:textColor="@color/zeew_green"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +38,7 @@
         android:textStyle="bold"
         android:textSize="30sp"
         android:textColor="@color/black"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="20dp"/>
     <com.google.android.material.card.MaterialCardView
         style="@style/YourCardView"
         android:id="@+id/signInCard"
@@ -249,6 +254,7 @@
         app:layout_constraintEnd_toEndOf="@id/btnGoogle"
         app:layout_constraintTop_toTopOf="@id/btnGoogle"
         app:layout_constraintBottom_toBottomOf="@id/btnGoogle"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        app:layout_goneMarginBottom="20dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
